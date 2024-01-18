@@ -1,0 +1,74 @@
+ 
+body{
+    /* border: 1px solid red; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(59, 71, 82) ;
+}
+.parent{
+    /* border: 1px solid red; */
+    background-color: antiquewhite;
+    box-shadow: 0 10px 10px rgb(207, 157, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tag{
+    text-align: center;
+    color: white;
+ }
+h1{
+    background: linear-gradient(to top ,red,green,blue,orange,yellow);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+input{
+    width: 80%;
+}
+.mca-marks , .degree-marks , .inter-marks , .tent{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    display: none;
+}
+.body.one .parent{
+    display: none;
+}
+.body.one .mca-marks{
+    display: block;
+}
+.mca-marks{
+    overflow-y: scroll;
+}
+.body.two .parent{
+    display: none;
+}
+.body.two .degree-marks{
+    display: block;
+}
+.body.three .parent{
+    display: none;
+}
+.body.three .inter-marks{
+    display: block;
+}
+.body.fore .parent{
+    display: none;
+}
+.body.fore .tent{
+    display: block;
+}
+@media (min-width:200px){
+    .mca-marks , .degree-marks , .inter-marks , .tent{
+        width: 500px;
+        height: 600px;
+    }
+}
+    
